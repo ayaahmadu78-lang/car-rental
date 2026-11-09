@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السيارات - مكتب تأجير السيارات</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">مكتب <span>السرعة</span> لتأجير السيارات</div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="AboutUs.html">من نحن</a></li>
+        <li><a href="Cars.html" class="active">السيارات</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <h1>أسطول السيارات المتوفرة</h1>
+    <p>اختر السيارة أو السيارات التي ترغب بتأجيرها، ثم اضغط على زر <strong>متابعة</strong> لإكمال طلب الحجز.</p>
+
+    <table class="cars-table" summary="جدول السيارات المتوفرة للتأجير">
+        <thead>
+            <tr>
+                <th>اختيار</th>
+                <th>إظهار التفاصيل</th>
+                <th>السعر اليومي</th>
+                <th>سنة الصنع</th>
+                <th>الموديل</th>
+                <th>الرمز</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- سيارة 1 -->
+            <tr>
+                <td><input type="checkbox" name="selectCar" value="CR-001" id="sel-CR-001" /></td>
+                <td><input type="checkbox" class="show-details" value="CR-001" id="det-CR-001" /></td>
+                <td>250,000 ل.س</td>
+                <td>2023</td>
+                <td>Toyota Corolla</td>
+                <td>CR-001</td>
+            </tr>
+            <tr class="details-row" id="details-CR-001">
+                <td colspan="6">
+                    <strong>تفاصيل إضافية:</strong>
+                    نوع الوقود: بنزين |
+                    ناقل الحركة: أوتوماتيك |
+                    عدد المقاعد: 5 |
+                    عداد الكيلومترات: 45,000 كم |
+                    اللون: أبيض
+                </td>
+            </tr>
+
+            <!-- سيارة 2 -->
+            <tr>
+                <td><input type="checkbox" name="selectCar" value="CR-002" id="sel-CR-002" /></td>
+                <td><input type="checkbox" class="show-details" value="CR-002" id="det-CR-002" /></td>
+                <td>400,000 ل.س</td>
+                <td>2022</td>
+                <td>Kia Sportage</td>
+                <td>CR-002</td>
+            </tr>
+            <tr class="details-row" id="details-CR-002">
+                <td colspan="6">
+                    <strong>تفاصيل إضافية:</strong>
+                    نوع الوقود: ديزل |
+                    ناقل الحركة: أوتوماتيك |
+                    عدد المقاعد: 5 |
+                    عداد الكيلومترات: 62,000 كم |
+                    اللون: رمادي
+                </td>
+            </tr>
+
+            <!-- سيارة 3 -->
+            <tr>
+                <td><input type="checkbox" name="selectCar" value="CR-003" id="sel-CR-003" /></td>
+                <td><input type="checkbox" class="show-details" value="CR-003" id="det-CR-003" /></td>
+                <td>300,000 ل.س</td>
+                <td>2024</td>
+                <td>Hyundai Elantra</td>
+                <td>CR-003</td>
+            </tr>
+            <tr class="details-row" id="details-CR-003">
+                <td colspan="6">
+                    <strong>تفاصيل إضافية:</strong>
+                    نوع الوقود: بنزين |
+                    ناقل الحركة: أوتوماتيك |
+                    عدد المقاعد: 5 |
+                    عداد الكيلومترات: 18,000 كم |
+                    اللون: أسود
+                </td>
+            </tr>
+
+            <!-- سيارة 4 -->
+            <tr>
+                <td><input type="checkbox" name="selectCar" value="CR-004" id="sel-CR-004" /></td>
+                <td><input type="checkbox" class="show-details" value="CR-004" id="det-CR-004" /></td>
+                <td>180,000 ل.س</td>
+                <td>2021</td>
+                <td>Chevrolet Spark</td>
+                <td>CR-004</td>
+            </tr>
+            <tr class="details-row" id="details-CR-004">
+                <td colspan="6">
+                    <strong>تفاصيل إضافية:</strong>
+                    نوع الوقود: بنزين |
+                    ناقل الحركة: عادي |
+                    عدد المقاعد: 4 |
+                    عداد الكيلومترات: 89,000 كم |
+                    اللون: أحمر
+                </td>
+            </tr>
+
+            <!-- سيارة 5 -->
+            <tr>
+                <td><input type="checkbox" name="selectCar" value="CR-005" id="sel-CR-005" /></td>
+                <td><input type="checkbox" class="show-details" value="CR-005" id="det-CR-005" /></td>
+                <td>550,000 ل.س</td>
+                <td>2023</td>
+                <td>Toyota Land Cruiser</td>
+                <td>CR-005</td>
+            </tr>
+            <tr class="details-row" id="details-CR-005">
+                <td colspan="6">
+                    <strong>تفاصيل إضافية:</strong>
+                    نوع الوقود: بنزين |
+                    ناقل الحركة: أوتوماتيك |
+                    عدد المقاعد: 7 |
+                    عداد الكيلومترات: 35,000 كم |
+                    اللون: أزرق
+                </td>
+            </tr>
+
+            <!-- سيارة 6 (إضافية) -->
+            <tr>
+                <td><input type="checkbox" name="selectCar" value="CR-006" id="sel-CR-006" /></td>
+                <td><input type="checkbox" class="show-details" value="CR-006" id="det-CR-006" /></td>
+                <td>480,000 ل.س</td>
+                <td>2024</td>
+                <td>Hyundai Tucson</td>
+                <td>CR-006</td>
+            </tr>
+            <tr class="details-row" id="details-CR-006">
+                <td colspan="6">
+                    <strong>تفاصيل إضافية:</strong>
+                    نوع الوقود: هجين |
+                    ناقل الحركة: أوتوماتيك |
+                    عدد المقاعد: 5 |
+                    عداد الكيلومترات: 22,000 كم |
+                    اللون: فضي
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="text-align:center;">
+        <button type="button" id="btnContinue" class="btn">متابعة</button>
+    </p>
+
+    <!-- نموذج الحجز -->
+    <div id="bookingForm">
+        <h2>نموذج طلب الحجز</h2>
+        <form action="#" method="post" onsubmit="return false;">
+            <fieldset>
+                <legend>بيانات مقدم الطلب</legend>
+
+                <div class="form-group">
+                    <label for="fullName">الاسم الكامل (أحرف عربية فقط) *</label>
+                    <input type="text" id="fullName" name="fullName" />
+                    <div id="nameError" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nationalId">الرقم الوطني (11 خانة) *</label>
+                    <input type="text" id="nationalId" name="nationalId" maxlength="11" />
+                    <div id="idError" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">تاريخ بداية التأجير *</label>
+                    <input type="date" id="startDate" name="startDate" />
+                    <div id="dateError" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">تاريخ نهاية التأجير *</label>
+                    <input type="date" id="endDate" name="endDate" />
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">رقم الموبايل (Syriatel أو MTN)</label>
+                    <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="مثال: 093xxxxxxx" />
+                    <div id="mobileError" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" />
+                    <div id="emailError" class="error-msg"></div>
+                </div>
+            </fieldset>
+
+            <p style="text-align:center;">
+                <button type="submit" class="btn btn-success">إرسال الطلب</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- صندوق النتيجة -->
+    <div id="resultBox">
+        <div id="resultContent"></div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>مكتب السرعة لتأجير السيارات &copy; 2026 - جميع الحقوق محفوظة</p>
+        <p>وظيفة مادة تصميم وتطوير تطبيقات الويب - الجامعة الافتراضية السورية</p>
+    </div>
+</footer>
+
+</body>
+</html>
